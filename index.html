@@ -6,11 +6,33 @@
   <title>Shivanya Camera Rental - Pune</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    /* Animations */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounceIn {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 10px #25D366; }
+      50% { box-shadow: 0 0 20px #25D366; }
+    }
+
     .fade-in { animation: fadeIn 1s ease-out forwards; }
+    .slide-in { animation: slideUp 0.8s ease-in-out forwards; }
+    .bounce { animation: bounceIn 1.5s infinite; }
+    .blink { animation: blink 1s infinite; }
+    .glow { animation: glow 1.5s infinite; }
   </style>
 </head>
 
@@ -19,12 +41,12 @@
   <!-- Header -->
   <header class="bg-black text-white p-6 text-center shadow-md fade-in">
     <h1 class="text-4xl md:text-5xl font-extrabold">Shivanya Camera Rental</h1>
-    <p class="text-sm mt-2 font-bold">Pune's Most Trusted Camera Gear Partner</p>
+    <p class="text-sm mt-2">Pune's Most Trusted Camera Gear Partner</p>
   </header>
 
-  <!-- Navbar -->
-  <nav class="bg-gray-800 text-white text-sm p-4 overflow-x-auto whitespace-nowrap sticky top-0 z-50 shadow-md">
-    <div class="flex justify-center space-x-4 mx-auto w-fit font-bold">
+  <!-- Navbar with Scroll and Centering -->
+  <nav class="bg-gray-800 text-white text-sm p-4 overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300 sticky top-0 z-50 shadow-md">
+    <div class="flex justify-center space-x-4 mx-auto w-fit">
       <a href="#home" class="hover:underline">Home</a>
       <a href="#about" class="hover:underline">About</a>
       <a href="#catalog" class="hover:underline">Catalog</a>
@@ -50,40 +72,56 @@
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="py-14 px-6 fade-in">
+  <!-- Sections with red background -->
+  <section id="about" class="py-14 px-6 bg-red-600">
     <h2 class="text-3xl font-bold mb-4">About</h2>
     <p class="font-bold">We offer high-quality cameras with doorstep delivery, professional service, and flexible rental plans.</p>
   </section>
 
-  <!-- Catalog -->
-  <section id="catalog" class="py-14 px-6 fade-in">
+  <section id="catalog" class="py-14 px-6 bg-red-600">
     <h2 class="text-3xl font-bold mb-4">Catalog</h2>
     <p class="font-bold">Choose from a wide range of DSLR, Mirrorless, GoPros, and accessories.</p>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="py-14 px-6 fade-in">
+  <section id="gallery" class="py-14 px-6 bg-red-600">
     <h2 class="text-3xl font-bold mb-4">Gallery</h2>
     <p class="font-bold">See real shoots done with our rental gear. Uploads updated weekly.</p>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="py-14 px-6 fade-in">
+  <section id="services" class="py-14 px-6 bg-red-600">
     <h2 class="text-3xl font-bold mb-4">Services</h2>
     <p class="font-bold">DSLRs, drones, tripods, memory cards, and delivery—all under one roof.</p>
   </section>
 
-  <!-- FAQs -->
-  <section id="faq" class="py-14 px-6 fade-in">
+  <section id="faq" class="py-14 px-6 bg-red-600">
     <h2 class="text-3xl font-bold mb-4">FAQs</h2>
     <p class="font-bold">Have questions? We’ve answered the most common ones here.</p>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-14 px-6 fade-in">
+  <section id="contact" class="py-14 px-6 bg-red-600">
     <h2 class="text-3xl font-bold mb-4">Contact</h2>
     <p class="font-bold">📱 WhatsApp: 9921685888<br>📍 Pune, Maharashtra</p>
+  </section>
+
+  <!-- Features Section (Optional, not part of your change) -->
+  <section class="py-14 bg-white slide-in">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10 text-black">Why Choose Us?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-black">
+        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300 font-bold">
+          <h4 class="text-xl font-semibold mb-2">📸 DSLR Cameras</h4>
+          <p>Trusted DSLR gear from Canon, Nikon & Sony—perfect for events, travel, and portraits.</p>
+        </div>
+        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300 font-bold">
+          <h4 class="text-xl font-semibold mb-2">📷 Mirrorless Cameras</h4>
+          <p>Compact, high-performance mirrorless kits ideal for creators and vloggers.</p>
+        </div>
+        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300 font-bold">
+          <h4 class="text-xl font-semibold mb-2">🏆 Full Frame Options</h4>
+          <p>Professional-grade full-frame cameras to take your photoshoots to the next level.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- WhatsApp Banner -->
@@ -91,7 +129,7 @@
     <h4 class="text-2xl font-bold mb-2 text-black">💬 Still Have Questions?</h4>
     <p class="mb-4 font-bold text-black">Talk to us directly on WhatsApp for inquiries, bookings, and quick support.</p>
     <a href="https://wa.me/919921685888"
-       class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 text-lg font-bold transition cursor-pointer">
+       class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 text-lg font-bold transition blink cursor-pointer">
       Chat Now
     </a>
   </section>
@@ -103,7 +141,7 @@
 
   <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/919921685888" target="_blank"
-     class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full text-2xl shadow-lg hover:bg-green-600 transition">
+     class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full text-2xl shadow-lg hover:bg-green-600 transition bounce">
     💬
   </a>
 

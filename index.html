@@ -36,7 +36,7 @@
   </style>
 </head>
 
-<body class="bg-red-600 text-black overflow-y-scroll">
+<body class="bg-gray-100 text-gray-900">
 
   <!-- Header -->
   <header class="bg-black text-white p-6 text-center shadow-md fade-in">
@@ -47,76 +47,45 @@
   <!-- Navbar with Scroll and Centering -->
   <nav class="bg-gray-800 text-white text-sm p-4 overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300 sticky top-0 z-50 shadow-md">
     <div class="flex justify-center space-x-4 mx-auto w-fit">
-      <a href="#home" class="hover:underline">Home</a>
-      <a href="#about" class="hover:underline">About</a>
-      <a href="#catalog" class="hover:underline">Catalog</a>
-      <a href="#gallery" class="hover:underline">Gallery</a>
-      <a href="#services" class="hover:underline">Services</a>
-      <a href="#faq" class="hover:underline">FAQs</a>
-      <a href="#contact" class="hover:underline">Contact</a>
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="catalog.html" class="hover:underline">Catalog</a>
+      <a href="gallery.html" class="hover:underline">Gallery</a>
+      <a href="services.html" class="hover:underline">Services</a>
+      <a href="faq.html" class="hover:underline">FAQs</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="relative bg-cover bg-center h-[90vh] flex flex-col justify-center items-center text-center fade-in" style="background-image: url('assets/hero-bg.jpg');">
+  <section class="relative bg-cover bg-center h-[90vh] flex flex-col justify-center items-center text-center fade-in" style="background-image: url('assets/hero-bg.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     <div class="relative z-10">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-3 text-white animate-pulse">Welcome to our camera rental service</h1>
-      <p class="text-md md:text-lg font-bold mb-5 max-w-2xl text-white">
+      <h1 class="text-xl md:text-2xl font-semibold mb-3 text-white animate-pulse">Welcome to our camera rental service</h1>
+      <p class="text-md md:text-lg font-medium mb-5 max-w-2xl text-white">
         Rent DSLR, Mirrorless, and Full Frame cameras at affordable daily rates. Quick WhatsApp booking & doorstep delivery.
       </p>
       <a href="https://wa.me/919921685888"
-         class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-green-600 transition duration-300 cursor-pointer">
+         class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-green-600 transition duration-300 cursor-pointer">
         📷 Rent Now on WhatsApp
       </a>
     </div>
   </section>
 
-  <!-- Sections with red background -->
-  <section id="about" class="py-14 px-6 bg-red-600">
-    <h2 class="text-3xl font-bold mb-4">About</h2>
-    <p class="font-bold">We offer high-quality cameras with doorstep delivery, professional service, and flexible rental plans.</p>
-  </section>
-
-  <section id="catalog" class="py-14 px-6 bg-red-600">
-    <h2 class="text-3xl font-bold mb-4">Catalog</h2>
-    <p class="font-bold">Choose from a wide range of DSLR, Mirrorless, GoPros, and accessories.</p>
-  </section>
-
-  <section id="gallery" class="py-14 px-6 bg-red-600">
-    <h2 class="text-3xl font-bold mb-4">Gallery</h2>
-    <p class="font-bold">See real shoots done with our rental gear. Uploads updated weekly.</p>
-  </section>
-
-  <section id="services" class="py-14 px-6 bg-red-600">
-    <h2 class="text-3xl font-bold mb-4">Services</h2>
-    <p class="font-bold">DSLRs, drones, tripods, memory cards, and delivery—all under one roof.</p>
-  </section>
-
-  <section id="faq" class="py-14 px-6 bg-red-600">
-    <h2 class="text-3xl font-bold mb-4">FAQs</h2>
-    <p class="font-bold">Have questions? We’ve answered the most common ones here.</p>
-  </section>
-
-  <section id="contact" class="py-14 px-6 bg-red-600">
-    <h2 class="text-3xl font-bold mb-4">Contact</h2>
-    <p class="font-bold">📱 WhatsApp: 9921685888<br>📍 Pune, Maharashtra</p>
-  </section>
-
-  <!-- Features Section (Optional, not part of your change) -->
+  <!-- Features Section -->
   <section class="py-14 bg-white slide-in">
     <div class="max-w-6xl mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-10 text-black">Why Choose Us?</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-black">
-        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300 font-bold">
+      <h3 class="text-3xl font-bold text-center mb-10">Why Choose Us?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300">
           <h4 class="text-xl font-semibold mb-2">📸 DSLR Cameras</h4>
           <p>Trusted DSLR gear from Canon, Nikon & Sony—perfect for events, travel, and portraits.</p>
         </div>
-        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300 font-bold">
+        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300">
           <h4 class="text-xl font-semibold mb-2">📷 Mirrorless Cameras</h4>
           <p>Compact, high-performance mirrorless kits ideal for creators and vloggers.</p>
         </div>
-        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300 font-bold">
+        <div class="p-6 border rounded shadow hover:scale-105 transition-transform duration-300">
           <h4 class="text-xl font-semibold mb-2">🏆 Full Frame Options</h4>
           <p>Professional-grade full-frame cameras to take your photoshoots to the next level.</p>
         </div>
@@ -126,24 +95,24 @@
 
   <!-- WhatsApp Banner -->
   <section class="bg-green-100 py-12 text-center fade-in">
-    <h4 class="text-2xl font-bold mb-2 text-black">💬 Still Have Questions?</h4>
-    <p class="mb-4 font-bold text-black">Talk to us directly on WhatsApp for inquiries, bookings, and quick support.</p>
+    <h4 class="text-2xl font-bold mb-2">💬 Still Have Questions?</h4>
+    <p class="mb-4">Talk to us directly on WhatsApp for inquiries, bookings, and quick support.</p>
     <a href="https://wa.me/919921685888"
-       class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 text-lg font-bold transition blink cursor-pointer">
+       class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 text-lg font-medium transition blink cursor-pointer">
       Chat Now
     </a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 text-center py-4 text-sm text-black fade-in font-bold">
+  <footer class="bg-gray-200 text-center py-4 text-sm text-gray-700 fade-in">
     © 2025 Shivanya Camera Rental. All rights reserved.
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919921685888" target="_blank"
-     class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full text-2xl shadow-lg hover:bg-green-600 transition bounce">
-    💬
-  </a>
+<a href="https://wa.me/919921685888" target="_blank"
+  class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full text-2xl shadow-lg hover:bg-green-600 transition bounce">
+  💬
+</a>
 
 </body>
 </html>

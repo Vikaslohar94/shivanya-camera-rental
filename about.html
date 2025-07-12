@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - Shivanya Camera Rental</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-gradient-to-br from-red-100 via-white to-red-200 text-gray-900 min-h-screen">
 
   <!-- Navbar -->
-  <nav class="bg-black text-white text-sm p-4 flex justify-center space-x-4">
+  <nav class="bg-black text-white text-sm p-4 flex justify-center space-x-6 font-bold sticky top-0 shadow-md z-50">
     <a href="index.html" class="hover:underline">Home</a>
-    <a href="about.html" class="hover:underline">About</a>
+    <a href="about.html" class="underline text-red-400">About</a>
     <a href="catalog.html" class="hover:underline">Catalog</a>
     <a href="gallery.html" class="hover:underline">Gallery</a>
     <a href="services.html" class="hover:underline">Services</a>
@@ -20,23 +20,42 @@
   </nav>
 
   <!-- About Section -->
-  <section class="p-6 max-w-3xl mx-auto mt-10">
-    <h1 class="text-3xl font-bold mb-4">About Shivanya Camera Rental</h1>
-    <p class="text-lg mb-4">
-      Shivanya Camera Rental is Pune’s most trusted camera rental service. We offer professional-grade
-      cameras and gear for photography, videography, vlogging, and events. Whether you are a beginner or
-      a pro, we have the perfect equipment for you.
-    </p>
-    <p class="text-lg">
-      We pride ourselves on fast delivery, easy booking via WhatsApp, and affordable pricing that fits every budget.
-      Shivanya Camera Rental is here to support your creativity with quality tools.
-    </p>
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Left: Text -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-red-700 mb-6">About <span class="text-black">Shivanya Camera Rental</span></h1>
+        <p class="text-lg mb-4 leading-relaxed">
+          At <span class="font-semibold text-black">Shivanya Camera Rental</span>, we empower your photography journey. Whether you're a beginner or a pro, we provide top-tier camera gear tailored to your needs—DSLRs, Mirrorless, GoPros & more.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Trusted across Pune for <span class="text-red-600 font-bold">affordable pricing</span>, <span class="text-red-600 font-bold">quick doorstep delivery</span>, and <span class="text-red-600 font-bold">instant WhatsApp booking</span>, we’re here to support your creative vision every step of the way.
+        </p>
+      </div>
+
+      <!-- Right: Image -->
+      <div>
+        <img src="assets/about-camera.jpg" alt="Camera Rental" class="w-full rounded-2xl shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-10 bg-white shadow-inner">
+    <h2 class="text-2xl md:text-3xl font-bold mb-3 text-gray-800">🎯 Ready to Shoot with the Best Gear?</h2>
+    <p class="mb-5 text-gray-600">Book your next camera in seconds. Click below to chat with us on WhatsApp.</p>
+    <a href="https://wa.me/919921685888"
+       class="inline-block bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-700 transition">
+      📸 Rent Now on WhatsApp
+    </a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 text-center p-4 mt-10 text-sm">
+  <footer class="bg-gray-200 text-center p-4 text-sm mt-10 text-gray-700">
     © 2025 Shivanya Camera Rental. All rights reserved.
   </footer>
 
 </body>
 </html>
+

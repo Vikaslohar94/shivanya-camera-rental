@@ -2,50 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FAQs - Shivanya Camera Rental</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-gray-50 text-gray-800">
 
   <!-- Navbar -->
-  <nav class="bg-black text-white text-sm p-4 flex justify-center space-x-4">
+  <nav class="bg-red-600 text-black text-sm p-4 font-bold flex justify-center space-x-4 sticky top-0 z-50 shadow-md">
     <a href="index.html" class="hover:underline">Home</a>
     <a href="about.html" class="hover:underline">About</a>
     <a href="catalog.html" class="hover:underline">Catalog</a>
     <a href="gallery.html" class="hover:underline">Gallery</a>
     <a href="services.html" class="hover:underline">Services</a>
-    <a href="faq.html" class="hover:underline">FAQs</a>
+    <a href="faq.html" class="underline text-white">FAQs</a>
     <a href="contact.html" class="hover:underline">Contact</a>
   </nav>
 
   <!-- FAQ Section -->
-  <section class="max-w-3xl mx-auto p-6 mt-10">
-    <h1 class="text-3xl font-bold mb-6">Frequently Asked Questions</h1>
+  <section class="max-w-4xl mx-auto p-6 mt-10">
+    <h1 class="text-4xl font-extrabold text-red-600 mb-8 text-center">📖 Frequently Asked Questions</h1>
 
-    <div class="mb-4">
-      <h2 class="font-semibold">📦 What documents are needed to rent a camera?</h2>
-      <p>A government ID proof like Aadhaar, PAN, or Driving License is required at the time of pickup.</p>
+    <div class="space-y-6">
+
+      <details class="bg-white rounded shadow p-4 group cursor-pointer transition hover:shadow-lg">
+        <summary class="font-semibold text-lg group-hover:text-red-600">📦 What documents are needed to rent a camera?</summary>
+        <p class="mt-2 text-gray-600">A government ID proof like Aadhaar, PAN, or Driving License is required at the time of pickup.</p>
+      </details>
+
+      <details class="bg-white rounded shadow p-4 group cursor-pointer transition hover:shadow-lg">
+        <summary class="font-semibold text-lg group-hover:text-red-600">⏱️ What is the rental duration?</summary>
+        <p class="mt-2 text-gray-600">You can rent per day or weekly. Prices mentioned are per day unless stated otherwise.</p>
+      </details>
+
+      <details class="bg-white rounded shadow p-4 group cursor-pointer transition hover:shadow-lg">
+        <summary class="font-semibold text-lg group-hover:text-red-600">🚚 Do you offer home delivery?</summary>
+        <p class="mt-2 text-gray-600">Yes, we offer delivery within Pune city for a small charge. Free pickup available from our office.</p>
+      </details>
+
+      <details class="bg-white rounded shadow p-4 group cursor-pointer transition hover:shadow-lg">
+        <summary class="font-semibold text-lg group-hover:text-red-600">💸 Is there a deposit amount?</summary>
+        <p class="mt-2 text-gray-600">Yes, a refundable deposit is required depending on the equipment.</p>
+      </details>
+
     </div>
 
-    <div class="mb-4">
-      <h2 class="font-semibold">⏱️ What is the rental duration?</h2>
-      <p>You can rent per day or weekly. Prices mentioned are per day unless stated otherwise.</p>
-    </div>
-
-    <div class="mb-4">
-      <h2 class="font-semibold">🚚 Do you offer home delivery?</h2>
-      <p>Yes, we offer delivery within Pune city for a small charge. Free pickup available from our office.</p>
-    </div>
-
-    <div class="mb-4">
-      <h2 class="font-semibold">💸 Is there a deposit amount?</h2>
-      <p>Yes, a refundable deposit is required depending on the equipment.</p>
+    <div class="text-center mt-10">
+      <a href="https://wa.me/919921685888" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition hover:scale-105 inline-block">
+        💬 Chat with us on WhatsApp
+      </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-200 text-center p-4 mt-10 text-sm">
+  <footer class="bg-gray-200 text-center p-4 mt-10 text-sm text-gray-700">
     © 2025 Shivanya Camera Rental. All rights reserved.
   </footer>
 

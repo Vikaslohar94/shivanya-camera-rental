@@ -32,20 +32,24 @@
     <p class="text-lg text-gray-600 mt-2">Explore our camera gear and event shoots</p>
   </header>
 
-  <!-- Gallery Section -->
-  <section class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
-    <template x-for="img in [
-      'assets/image.jpg', 'assets/image1.jpg', 'assets/image2.jpg', 'assets/image3.jpg',
-      'assets/image4.jpg', 'assets/image5.jpg', 'assets/image6.jpg', 'assets/image7.jpg',
-      'assets/image8.jpg', 'assets/image9.jpeg', 'assets/image10.jpg', 'assets/image11.jpg'
-    ]" :key="img">
-      <div 
-        class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105 cursor-pointer"
-        @click="open = true; image = img"
-      >
-        <img :src="img" class="w-full h-60 object-contain bg-white rounded-xl" />
+  <!-- ✨ Enhanced Gallery Section -->
+  <section class="bg-gradient-to-br from-white via-blue-50 to-sky-100 py-16 px-6 md:px-20">
+    <div class="max-w-7xl mx-auto bg-white p-10 rounded-2xl shadow-2xl transition-all hover:shadow-sky-300 duration-300">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <template x-for="img in [
+          'assets/image.jpg', 'assets/image1.jpg', 'assets/image2.jpg', 'assets/image3.jpg',
+          'assets/image4.jpg', 'assets/image5.jpg', 'assets/image6.jpg', 'assets/image7.jpg',
+          'assets/image8.jpg', 'assets/image9.jpeg', 'assets/image10.jpg', 'assets/image11.jpg'
+        ]" :key="img">
+          <div 
+            class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105 cursor-pointer"
+            @click="open = true; image = img"
+          >
+            <img :src="img" class="w-full h-60 object-contain bg-white rounded-xl" />
+          </div>
+        </template>
       </div>
-    </template>
+    </div>
   </section>
 
   <!-- Modal Lightbox -->

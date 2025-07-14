@@ -26,11 +26,22 @@
       0%, 100% { box-shadow: 0 0 10px #25D366; }
       50% { box-shadow: 0 0 20px #25D366; }
     }
+
     .fade-in { animation: fadeIn 1s ease-out forwards; }
     .slide-in { animation: slideUp 0.8s ease-in-out forwards; }
     .bounce { animation: bounceIn 1.5s infinite; }
     .blink { animation: blink 1s infinite; }
     .glow { animation: glow 1.5s infinite; }
+
+    /* Hero scroll image */
+    .hero-scroll {
+      background-image: url('assets/hero-bg.jpg');
+      background-repeat: repeat-x;
+      background-position: top;
+      background-size: auto 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
   </style>
 </head>
 
@@ -55,20 +66,21 @@
     </div>
   </nav>
 
-  <!-- Hero Section with vertical scrollable background -->
-  <section class="relative h-[90vh] overflow-y-auto">
+  <!-- Hero Section with horizontal scrollable background -->
+  <section class="relative h-[90vh]">
     <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-    <div class="h-[180vh] bg-cover bg-center" style="background-image: url('assets/hero-bg.jpg');">
-      <div class="relative z-20 h-[90vh] flex flex-col justify-center items-center text-center">
-        <h1 class="text-xl md:text-4xl font-semibold mb-3 text-white animate-pulse">Welcome to our camera rental service</h1>
-        <p class="text-md md:text-lg font-medium mb-5 max-w-2xl text-white">
-          Rent DSLR, Mirrorless, and Full Frame cameras at affordable daily rates. Quick WhatsApp booking & doorstep delivery.
-        </p>
-        <a href="https://wa.me/919921685888"
-           class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-green-600 transition duration-300 cursor-pointer">
-          📷 Rent Now on WhatsApp
-        </a>
-      </div>
+    <div class="hero-scroll h-full overflow-x-auto relative z-0">
+      <div class="inline-block w-[200vw] h-full"></div> <!-- Wide scrollable area -->
+    </div>
+    <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-xl md:text-4xl font-semibold mb-3 text-white animate-pulse">Welcome to our camera rental service</h1>
+      <p class="text-md md:text-lg font-medium mb-5 max-w-2xl text-white">
+        Rent DSLR, Mirrorless, and Full Frame cameras at affordable daily rates. Quick WhatsApp booking & doorstep delivery.
+      </p>
+      <a href="https://wa.me/919921685888"
+         class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-green-600 transition duration-300 cursor-pointer">
+        📷 Rent Now on WhatsApp
+      </a>
     </div>
   </section>
 

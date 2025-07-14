@@ -66,23 +66,25 @@
     </div>
   </nav>
 
-  <!-- Hero Section with horizontal scrollable background -->
-  <section class="relative h-[90vh]">
-    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-    <div class="hero-scroll h-full overflow-x-auto relative z-0">
-      <div class="inline-block w-[200vw] h-full"></div> <!-- Wide scrollable area -->
-    </div>
-    <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
-      <h1 class="text-xl md:text-4xl font-semibold mb-3 text-white animate-pulse">Welcome to our camera rental service</h1>
-      <p class="text-md md:text-lg font-medium mb-5 max-w-2xl text-white">
-        Rent DSLR, Mirrorless, and Full Frame cameras at affordable daily rates. Quick WhatsApp booking & doorstep delivery.
-      </p>
-      <a href="https://wa.me/919921685888"
-         class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-green-600 transition duration-300 cursor-pointer">
-        📷 Rent Now on WhatsApp
-      </a>
-    </div>
-  </section>
+
+<!-- Hero Section with Horizontal Scroll -->
+<section class="relative h-[90vh] overflow-hidden fade-in">
+  <div class="overflow-x-auto h-full whitespace-nowrap">
+    <img src="assets/hero-bg.jpg" alt="Hero Background" class="inline-block h-full" />
+  </div>
+  <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+  <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-xl md:text-4xl font-semibold mb-3 text-white animate-pulse">Welcome to our camera rental service</h1>
+    <p class="text-md md:text-lg font-medium mb-5 max-w-2xl text-white">
+      Rent DSLR, Mirrorless, and Full Frame cameras at affordable daily rates. Quick WhatsApp booking & doorstep delivery.
+    </p>
+    <a href="https://wa.me/919921685888"
+       class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-green-600 transition duration-300 cursor-pointer">
+      📷 Rent Now on WhatsApp
+    </a>
+  </div>
+</section>
+
 
   <!-- Features Section -->
   <section class="py-14 bg-white slide-in">

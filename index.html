@@ -6,6 +6,7 @@
   <title>Shivanya Camera Rental - Pune</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    /* Animations */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -32,16 +33,6 @@
     .bounce { animation: bounceIn 1.5s infinite; }
     .blink { animation: blink 1s infinite; }
     .glow { animation: glow 1.5s infinite; }
-
-    /* Hero scroll image */
-    .hero-scroll {
-      background-image: url('assets/hero-bg.jpg');
-      background-repeat: repeat-x;
-      background-position: top;
-      background-size: auto 100%;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
   </style>
 </head>
 
@@ -53,27 +44,25 @@
     <p class="text-sm mt-2">Pune's Most Trusted Camera Gear Partner</p>
   </header>
 
-  <!-- Navbar -->
-  <nav class="bg-sky-700 text-black text-sm p-4 overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300 sticky top-0 z-50 shadow-md">
-    <div class="flex justify-center space-x-4 mx-auto w-fit font-bold">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="about.html" class="hover:underline">About</a>
-      <a href="catalog.html" class="hover:underline">Catalog</a>
-      <a href="gallery.html" class="hover:underline">Gallery</a>
-      <a href="services.html" class="hover:underline">Services</a>
-      <a href="faq.html" class="hover:underline">FAQs</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
-    </div>
-  </nav>
-
-
-<!-- Hero Section with Horizontal Scroll -->
-<section class="relative h-[90vh] overflow-hidden fade-in">
-  <div class="overflow-x-auto h-full whitespace-nowrap">
-    <img src="assets/hero-bg.jpg" alt="Hero Background" class="inline-block h-full" />
+  <!-- Navbar with Scroll and Centering -->
+<nav class="bg-sky-700 text-black text-sm p-4 overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300 sticky top-0 z-50 shadow-md">
+  <div class="flex justify-center space-x-4 mx-auto w-fit font-bold">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="about.html" class="hover:underline">About</a>
+    <a href="catalog.html" class="hover:underline">Catalog</a>
+    <a href="gallery.html" class="hover:underline">Gallery</a>
+    <a href="services.html" class="hover:underline">Services</a>
+    <a href="faq.html" class="hover:underline">FAQs</a>
+    <a href="contact.html" class="hover:underline">Contact</a>
   </div>
-  <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-  <div class="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
+</nav>
+
+
+
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center h-[90vh] flex flex-col justify-center items-center text-center fade-in" style="background-image: url('assets/hero-bg.jpg'); background-attachment: scroll;">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10">
     <h1 class="text-xl md:text-4xl font-semibold mb-3 text-white animate-pulse">Welcome to our camera rental service</h1>
     <p class="text-md md:text-lg font-medium mb-5 max-w-2xl text-white">
       Rent DSLR, Mirrorless, and Full Frame cameras at affordable daily rates. Quick WhatsApp booking & doorstep delivery.
@@ -84,6 +73,8 @@
     </a>
   </div>
 </section>
+
+
 
 
   <!-- Features Section -->
@@ -123,10 +114,10 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919921685888" target="_blank"
-     class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full text-2xl shadow-lg hover:bg-green-600 transition bounce">
-    💬
-  </a>
+<a href="https://wa.me/919921685888" target="_blank"
+  class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full text-2xl shadow-lg hover:bg-green-600 transition bounce">
+  💬
+</a>
 
 </body>
 </html>

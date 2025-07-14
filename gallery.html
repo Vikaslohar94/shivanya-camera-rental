@@ -28,7 +28,18 @@
 
   <!-- Gallery Heading -->
   <header class="text-center mt-10 mb-6">
-    <h1 class="text-4xl font-extrabold text-sky-800">📸 Gallery</h1>
+       <style type="text/tailwindcss">
+  @layer utilities {
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+    .animate-blink {
+      animation: blink 1.3s infinite;
+    }
+  }
+</style>
+    <h1 class="text-4xl font-extrabold text-sky-800 animate-blink">📸 Gallery</h1>
     <p class="text-lg text-gray-600 mt-2">Explore our camera gear and event shoots</p>
   </header>
 

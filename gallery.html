@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{ open: false, image: '' }">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery - Shivanya Camera Rental</title>
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Alpine.js CDN -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
   <!-- Navbar -->
-  <nav class="bg-red-600 text-black text-sm p-4 overflow-x-auto whitespace-nowrap font-bold shadow-md sticky top-0 z-50">
+  <nav class="bg-sky-700 text-white text-sm p-4 font-bold shadow-md sticky top-0 z-50">
     <div class="flex justify-center space-x-6">
       <a href="index.html" class="hover:underline">Home</a>
       <a href="about.html" class="hover:underline">About</a>
       <a href="catalog.html" class="hover:underline">Catalog</a>
-      <a href="gallery.html" class="underline text-white">Gallery</a>
+      <a href="gallery.html" class="underline text-yellow-300">Gallery</a>
       <a href="services.html" class="hover:underline">Services</a>
       <a href="faq.html" class="hover:underline">FAQs</a>
       <a href="contact.html" class="hover:underline">Contact</a>
@@ -23,49 +28,38 @@
 
   <!-- Gallery Heading -->
   <header class="text-center mt-10 mb-6">
-    <h1 class="text-4xl font-extrabold text-red-600">📸 Gallery</h1>
-    <p class="text-lg text-gray-600 mt-2">Explore our camera gear and client event shoots</p>
+    <h1 class="text-4xl font-extrabold text-emerald-600">📸 Gallery</h1>
+    <p class="text-lg text-gray-600 mt-2">Explore our camera gear and event shoots</p>
   </header>
 
   <!-- Gallery Section -->
-  <section class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-9x2 mx-auto">
-    <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image.jpg" class="w-full h-52 object-cover">
-    </div>
-    <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image1.jpg"  class="w-full h-52 object-cover">
-    </div>
-    <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image2.jpg" class="w-full h-52 object-cover">
-    </div>
-    <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image3.jpg" class="w-full h-52 object-cover">
-    </div>
-    <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image4.jpg" class="w-full h-52 object-cover">
-    </div>
-    <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image5.jpg" class="w-full h-52 object-cover">
-    </div>
-        <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image6.jpg" class="w-full h-52 object-cover">
-    </div>
-        <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image7.jpg" class="w-full h-52 object-cover">
-    </div>
-        <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image8.jpg" class="w-full h-52 object-cover">
-    </div>
-        <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image9.jpeg" class="w-full h-52 object-cover">
-    </div>
-        <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image10.jpg" class="w-full h-52 object-cover">
-    </div>
-        <div class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-      <img src="assets/image11.jpg" class="w-full h-52 object-cover">
-    </div>
+  <section class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+    <template x-for="img in [
+      'assets/image.jpg', 'assets/image1.jpg', 'assets/image2.jpg', 'assets/image3.jpg',
+      'assets/image4.jpg', 'assets/image5.jpg', 'assets/image6.jpg', 'assets/image7.jpg',
+      'assets/image8.jpg', 'assets/image9.jpeg', 'assets/image10.jpg', 'assets/image11.jpg'
+    ]" :key="img">
+      <div 
+        class="overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300 transform hover:scale-105 cursor-pointer"
+        @click="open = true; image = img"
+      >
+        <img :src="img" class="w-full h-60 object-contain bg-white rounded-xl" />
+      </div>
+    </template>
   </section>
+
+  <!-- Modal Lightbox -->
+  <div 
+    x-show="open" 
+    x-transition 
+    class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50" 
+    @click.away="open = false"
+  >
+    <div class="relative max-w-4xl w-full p-4">
+      <img :src="image" class="rounded-lg mx-auto max-h-[80vh] w-auto shadow-xl" />
+      <button @click="open = false" class="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-gray-200 text-center p-4 mt-10 text-sm text-gray-700">

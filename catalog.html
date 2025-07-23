@@ -13,16 +13,22 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/aspect-ratio@latest"></script>
 
   
-  <style>
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+<style>
+  @keyframes pulseRent {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.08);
+      opacity: 0.7;
+    }
   }
-
-  .blink {
-    animation: blink 1.2s step-start infinite;
+  .pulse {
+    animation: pulseRent 1.2s infinite;
   }
 </style>
+
 
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -70,7 +76,7 @@
       <h2 class="text-xl font-bold mb-1">🔍 Sigma 50mm</h2>
       <p class="text-gray-500 mb-1">Prime Lens</p>
       <p class="text-gray-600 text-sm mb-2">f/1.4 DG HSM Art, Fast Focus, Sharp Portraits.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Sigma%2050mm" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Sigma%2050mm" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Sony A6000 -->
@@ -82,7 +88,7 @@
       <h2 class="text-xl font-bold mb-1">📷 Sony A6000</h2>
       <p class="text-gray-500 mb-1">Mirrorless APS-C</p>
       <p class="text-gray-600 text-sm mb-2">24MP, Fast AF, Compact, 11fps Burst Mode.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Sony%20A6000" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Sony%20A6000" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Sony Alpha 58 -->
@@ -93,7 +99,7 @@
       <h2 class="text-xl font-bold mb-1">📸 Sony Alpha 58</h2>
       <p class="text-gray-500 mb-1">SLT DSLR</p>
       <p class="text-gray-600 text-sm mb-2">20MP, OLED Viewfinder, Full HD, Fast Autofocus.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Sony%20Alpha%2058" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Sony%20Alpha%2058" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Canon D700 -->
@@ -105,7 +111,7 @@
       <h2 class="text-xl font-bold mb-1">📷 Canon D700</h2>
       <p class="text-gray-500 mb-1">DSLR</p>
       <p class="text-gray-600 text-sm mb-2">18MP, DIGIC 4, Full HD, Creative Auto Modes.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%20D700" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%20D700" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Canon D1500 -->
@@ -117,7 +123,7 @@
       <h2 class="text-xl font-bold mb-1">📷 Canon D1500</h2>
       <p class="text-gray-500 mb-1">Entry DSLR</p>
       <p class="text-gray-600 text-sm mb-2">24.1MP, WiFi/NFC, Guided UI, Scene Intelligent Auto.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%20D1500" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%20D1500" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Nikon D3500 -->
@@ -129,7 +135,7 @@
       <h2 class="text-xl font-bold mb-1">📸 Nikon D3500</h2>
       <p class="text-gray-500 mb-1">DSLR</p>
       <p class="text-gray-600 text-sm mb-2">24.2MP, SnapBridge, Lightweight, Great Battery Life.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Nikon%20D3500" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Nikon%20D3500" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Canon D3000 -->
@@ -141,7 +147,7 @@
       <h2 class="text-xl font-bold mb-1">📷 Canon D3000</h2>
       <p class="text-gray-500 mb-1">DSLR</p>
       <p class="text-gray-600 text-sm mb-2">Simple DSLR, 10.2MP, Beginner Friendly.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%20D3000" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%20D3000" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- GoPro Hero 7 -->
@@ -153,7 +159,7 @@
       <h2 class="text-xl font-bold mb-1">🎥 GoPro Hero 7</h2>
       <p class="text-gray-500 mb-1">Action Camera</p>
       <p class="text-gray-600 text-sm mb-2">4K Video, HyperSmooth, Waterproof, Voice Control.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20GoPro%20Hero%207" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20GoPro%20Hero%207" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Canon 5D Mark IV -->
@@ -165,7 +171,7 @@
       <h2 class="text-xl font-bold mb-1">📸 Canon 5D Mark IV</h2>
       <p class="text-gray-500 mb-1">Pro DSLR</p>
       <p class="text-gray-600 text-sm mb-2">30.4MP, 4K DCI, Dual Pixel AF, Weather Sealed.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%205D%20Mark%20IV" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%205D%20Mark%20IV" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Drone DJI Air Mavic -->
@@ -177,7 +183,7 @@
       <h2 class="text-xl font-bold mb-1">🛸 DJI Air Mavic</h2>
       <p class="text-gray-500 mb-1">Drone</p>
       <p class="text-gray-600 text-sm mb-2">4K Video, Obstacle Avoidance, 3-Axis Gimbal, GPS.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20DJI%20Air%20Mavic" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20DJI%20Air%20Mavic" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Canon 50mm -->
@@ -189,7 +195,7 @@
       <h2 class="text-xl font-bold mb-1">🔍 Canon 50mm</h2>
       <p class="text-gray-500 mb-1">Prime Lens</p>
       <p class="text-gray-600 text-sm mb-2">f/1.8 STM, Lightweight, Great for Portraits, Sharp Focus.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%2050mm" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%2050mm" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div> 
 
     <!-- Canon 55-250mm -->
@@ -201,7 +207,7 @@
       <h2 class="text-xl font-bold mb-1">🔭 Canon 55-250mm</h2>
       <p class="text-gray-500 mb-1">Telephoto Lens</p>
       <p class="text-gray-600 text-sm mb-2">EF-S, IS STM, Great Zoom Range, Lightweight, Ideal for Wildlife & Sports.</p>
-      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%2055-250mm" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
+      <a href="https://wa.me/919921685888?text=I%20want%20to%20rent%20Canon%2055-250mm" target="_blank" class="pulse inline-block bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded-full transition">📲 Rent Now</a>
     </div>
 
     <!-- Sony E-Mount 55-210mm -->
